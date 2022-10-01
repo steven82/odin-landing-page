@@ -22,8 +22,14 @@ ul {
   list-style: none;
 }
 
-.container {
+.wrapper {
   max-width: 1500px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
 }
@@ -57,27 +63,65 @@ ul {
 
 .header .container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-between;
   align-items: center;
+
+}.header .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 250px;
+  background-color: gray;
+  text-align: center;
+}
+
+.header .box {
+  width:450px;
+}
+
+.header h1 {
+  font-size: 48px;  
+  font-weight:bolder;
+  color: #F9faf8;
+}
+
+.header p {
+  padding: 10px 0;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.header .button {
+  widtH: 130px;
+  background-color: #3882F6;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 /* rules for each section */
-.navbar .container,
-.header .container,
-footer .container {
+.navbar .wrapper,
+.header .wrapper,
+footer .wrapper {
   background-color: #1F2937;
 }
 
-.information .container {
+.information .wrapper {
   background-color: rgb(247, 248, 248);
 }
 
-.quote .container {
+.quote .wrapper {
   background-color: #e5e7eb;
 }
 
 .navbar .container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-between;
   align-items: center;
 }
