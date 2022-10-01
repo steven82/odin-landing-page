@@ -10,8 +10,10 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
   color: #fff;
+  height: 100vh;
 }
 
+/* basic styling */
 img {
   max-width: 100%;
 }
@@ -21,10 +23,45 @@ ul {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
+  height: 100%;
 }
 
+
+/* navbar only */
+.nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  list-style: none;
+  text-decoration:none;
+  color: #e5e7eb;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight:bold;
+}
+
+/* header only */ 
+.header {
+  height: 500px;
+}
+
+.header .container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+/* rules for each section */
 .navbar .container,
 .header .container,
 footer .container {
@@ -37,4 +74,10 @@ footer .container {
 
 .quote .container {
   background-color: #e5e7eb;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
 }
