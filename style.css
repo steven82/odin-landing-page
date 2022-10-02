@@ -34,8 +34,22 @@ ul {
   height: 100%;
 }
 
+/* Set background colours for each section. */
+.navbar .wrapper,
+.header .wrapper,
+footer .wrapper {
+  background-color: #1F2937;
+}
 
-/* navbar only */
+.information .wrapper {
+  background-color: rgb(247, 248, 248);
+}
+
+.quote .wrapper {
+  background-color: #e5e7eb;
+}
+
+/* navbar styles */
 .nav {
   height: 60px;
   display: flex;
@@ -56,7 +70,13 @@ ul {
   font-weight:bold;
 }
 
-/* header only */ 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header styles */ 
 .header {
   height: 500px;
 }
@@ -79,7 +99,6 @@ ul {
 .header .box {
   width:450px;
 }
-
 .header h1 {
   font-size: 48px;  
   font-weight:bolder;
@@ -105,23 +124,72 @@ ul {
   font-weight: bold;
 }
 
-/* rules for each section */
-.navbar .wrapper,
-.header .wrapper,
-footer .wrapper {
-  background-color: #1F2937;
+/* Information section styles */
+
+.information {
+  text-align: center;
 }
 
-.information .wrapper {
-  background-color: rgb(247, 248, 248);
+.information .card {
+  width: 180px;
 }
 
-.quote .wrapper {
-  background-color: #e5e7eb;
+.information h2 {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: bolder;
+  padding: 50px 0px;
 }
 
-.navbar .container {
+.information .container {
+  color: #1F2937;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+
+.information .imagebox {
+ border: 4px solid #3882F6;
+ border-radius: 10px;
+ width: 180px;
+ height: 180px;
+}
+
+.information p {
+  padding-top: 10px;
+}
+
+/* Quote section styling */
+
+.quote {
+  height: 400px;
+}
+
+.quote .container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+.quote h2 {
+  color:#1F2937;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.quotetext {
+ width: 640px;
+}
+
+.quotetext p {
+  color:#1F2937;
+  text-align: end;
+  font-weight:bolder;
+  font-size: 20px;
+}
+
+
+
+
