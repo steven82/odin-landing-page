@@ -49,6 +49,10 @@ footer .wrapper {
   background-color: #e5e7eb;
 }
 
+.action .wrapper {
+  background-color: rgb(247, 248, 248);
+}
+
 /* navbar styles */
 .nav {
   height: 60px;
@@ -111,8 +115,9 @@ footer .wrapper {
   font-size: 18px;
 }
 
-.header .button {
-  widtH: 130px;
+.button {
+  width: 130px;
+  height: 40px;
   background-color: #3882F6;
   border: none;
   color: white;
@@ -190,6 +195,52 @@ footer .wrapper {
   font-size: 20px;
 }
 
+/* Call to action styling */
+
+.action {
+  height: 400px;
+  color: black;
+}
+
+.action .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action .box {
+  background-color: #3882F6;
+  border-radius: 10px;
+  width: 900px;
+  height: 150px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.box-text {
+  color:#e5e7eb;
+}
+
+.box-text h3 {
+  font-size: 24px;
+}
+
+.action .button {
+  border: 2px solid #e5e7eb;
+}
+
+/* footer styling */
+
+footer {
+  height: 100px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
